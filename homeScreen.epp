@@ -1,0 +1,49 @@
+homeScreen: 
+		( Page
+		pagingEvent: { n: gameScreen  }
+		components: 
+		{
+
+			background:
+			( Polygon
+			color: white
+			//texture: tex1
+			vertices:
+			{ [  10  10 ] [ -10  10 ]
+				[ -10 -10 ] [  10 -10 ] }
+			texCoord:
+			{ [  1  1 ] [  0  1 ] 
+			  [ 0 0 ] [ 1 0 ]  }
+			) //background
+
+			titletext:
+			( AsciiText
+				color: white
+				transform: { ( Translation -7.8 5.5 ) ( Scale 2 ) }  
+				text: "PUSHEEN'S PLINKO"
+				font: instnormfont
+			) // title text
+
+			start:
+			( Button
+				transform: ( Translation 0 -6 )
+				eventId: 3001
+				selectName: 1
+				components: {
+					( Polygon
+					color: white
+					vertices:
+					{ [  2  0 ] [ -2  0 ]
+					[ -2 -2 ] [  2 -2 ] }
+
+					)
+					( AsciiText
+						transform: ( Translation -0.8 -1.2 )
+						color: black
+						text: "START"
+					)
+				}
+			) // start button
+
+		} //pagecomponents
+		) //homescreen

@@ -1,0 +1,294 @@
+// 1st row
+
+( Circle
+    transform: ( Translation -1.5 4.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation -4.5 4.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation 1.5 4.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation 4.5 4.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation 7.5 4.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation -7.5 4.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+
+// 2nd row
+
+( Circle
+    transform: ( Translation 0 2.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation -3 2.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation 3 2.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation -6 2.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation 6 2.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+
+// 3rd row
+
+( Circle
+    transform: ( Translation -1.5 0.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation -4.5 0.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation 1.5 0.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation 4.5 0.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation 7.5 0.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation -7.5 0.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+
+// 4th row
+
+( Circle
+    transform: ( Translation 0 -1.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation -3 -1.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation 3 -1.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation -6 -1.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation 6 -1.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+
+// 5th row
+
+( Circle
+    transform: ( Translation -1.5 -3.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation -4.5 -3.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation 1.5 -3.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation 4.5 -3.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation 7.5 -3.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+( Circle
+    transform: ( Translation -7.5 -3.5 )
+    color: white
+    radius: 0.4
+    filled: 1
+    slices: 12
+)
+
+
+basket:
+( Polygon
+	texture: tex1
+	vertices:
+     { [2.5 -5] [-2.5 -5] 
+     [-2.5 -10] [2.5 -10] }
+	texCoord:
+	{ [ 1  1 ] [  0  1 ] 
+	[  0 0 ] [ 1 0 ]  }
+)
+
+//ball:
+//( Circle
+//    //right top---transform: ( Translation 1.3 -7.8 )
+//    //left top---transform: ( Translation -1.3 -7.8 )
+//    //right bottom---transform: ( Translation 1 -8.7 )
+//    //left bottom---transform: ( Translation -1 -8.7 )
+//    transform: ( Translation 0 8 )
+//    color: red
+//    radius: 0.4
+//    filled: 1
+//    slices: 12
+//)
+
+sslider:
+( Polygon
+    color: white
+	vertices:
+     { [-9 7.4] [-4 7.4] 
+     [-4 6.6] [-9 6.6] }
+)
+
+speedtext:
+( AsciiText
+	transform: ( Translation -7.1 6.9 )
+	color: pink
+	text: "SPEED"
+)
+
+sthumb:
+( Polygon
+    color: pink
+	vertices:
+     { [-9 7.4] [-8.8 7.4] 
+     [-8.8 6.6] [-9 6.6] }
+)
+
+gslider:
+( Polygon
+    color: white
+	vertices:
+     { [-9 9.2] [-4 9.2] 
+     [-4 8.4] [-9 8.4] }
+)
+
+gravtext:
+( AsciiText
+	transform: ( Translation -7.3 8.7 )
+	color: pink
+	text: "GRAVITY"
+)
+
+gthumb:
+( Polygon
+    color: pink
+	vertices:
+     { [-9 9.2] [-8.8 9.2] 
+     [-8.8 8.4] [-9 8.4] }
+)
+
+//( AsciiText inheritColor: 1 font: pfdspecfont transform: ( Translation 0 -1 ) text: "9")
+//( AsciiText inheritColor: 1 font: pfdspecfont text: "0")   // start
+//( AsciiText inheritColor: 1 font: pfdspecfont transform: ( Translation 0 -1 ) text: "1")
+//( AsciiText inheritColor: 1 font: pfdspecfont transform: ( Translation 0 -2 ) text: "2")
+//( AsciiText inheritColor: 1 font: pfdspecfont transform: ( Translation 0 -3 ) text: "3")
+//( AsciiText inheritColor: 1 font: pfdspecfont transform: ( Translation 0 -4 ) text: "4")
+//( AsciiText inheritColor: 1 font: pfdspecfont transform: ( Translation 0 -5 ) text: "5")
+//( AsciiText inheritColor: 1 font: pfdspecfont transform: ( Translation 0 -6 ) text: "6")
+//( AsciiText inheritColor: 1 font: pfdspecfont transform: ( Translation 0 -7 ) text: "7")
+//( AsciiText inheritColor: 1 font: pfdspecfont transform: ( Translation 0 1.20 ) text: "8")
+//( AsciiText inheritColor: 1 font: pfdspecfont transform: ( Translation 0 1.35 ) text: "9") // end
+//( AsciiText inheritColor: 1 font: pfdspecfont transform: ( Translation 0 1.50 ) text: "0")  

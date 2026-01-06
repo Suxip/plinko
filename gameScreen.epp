@@ -1,0 +1,119 @@
+gameScreen: 
+		( Page
+			pagingEvent: { n: colorScreen  }
+			components: {
+			
+				( Polygon
+					color: leafygarden
+					//texture: tex1
+					linewidth: 1
+					vertices:
+					{ [  10  10 ] [ -10  10 ]
+					  [ -10 -10 ] [  10 -10 ] }
+					texCoord:
+					{ [  1  1 ] [  0  1 ] 
+					  [  0  0 ] [  1  0 ] }
+				)
+
+				addball:
+				( Button
+				transform: ( Translation 1 8.6 )
+				eventId: 3003
+				selectName: 3
+				components: {
+					( Polygon
+					color: white
+					vertices:
+					{ [  3  0.6 ] [ 0  0.6 ]
+					[ 0 -0.6 ] [  3 -0.6 ] }
+					)
+					( AsciiText
+						//transform: { ( Translation 0.5 -0.1 ) ( Scale 0.5 ) }
+						transform: ( Translation 0.2 -0.2 )
+						color: pink
+						text: "ADD A BALL"
+						//font: instnormfont
+					)
+				}
+				) // addball button
+
+				reset:
+				( Button
+				transform: ( Translation 0 0 )
+				eventId: 3002
+				selectName: 2
+				components: {
+					( Polygon
+					color: white
+					vertices:
+					{ [  9  -8 ] [ 7  -8 ]
+						[ 7 -9 ] [  9 -9 ] }
+					)
+					( AsciiText
+						transform: ( Translation 7.2 -8.8 )
+						color: black
+						text: "Reset"
+					)
+				}
+				)
+
+				changecolor:
+				( Button
+				eventId: 3004
+				selectName: 4
+				components: {
+					( Polygon
+					color: white
+					vertices:
+					{ [  0  9.2 ] [ -3 9.2 ]
+					[ -3 8 ] [ 0 8 ] }
+
+					)
+					( AsciiText
+						//transform: { ( Translation -2.7 8.5 ) ( Scale 0.5 ) }
+						transform: ( Translation -2.3 8.6 )
+						color: pink
+						text: "CHANGE"
+						//font: instnormfont
+					)
+					( AsciiText
+						//transform: { ( Translation -2.7 8.5 ) ( Scale 0.5 ) }
+						transform: ( Translation -2.2 8.1 )
+						color: pink
+						text: "COLOR"
+						//font: instnormfont
+					)
+				}
+				) // changecolor button
+				
+				#include "Objects.epp"
+
+				scorebox:
+				( Polygon
+					selectName: 600
+					color: white
+					//texture: tex1
+					linewidth: 1
+					vertices:
+					{ [  9  9.2 ] [ 7  9.2 ]
+						[ 7 8.2 ] [  9 8.2 ] }
+					texCoord:
+					{ [  1   1 ] [  0  1 ] 
+						[  0 0 ] [ 1 0 ]  }
+			
+				)
+				scoretext:
+				( AsciiText
+					transform: ( Translation 5 8.5 )
+					color: black
+					text: "Score: "
+				)
+				scoreval:
+				( NumericReadout
+                    color: black
+					transform: ( Translation 7.1 8.5 )
+					format: "#####"	
+                )
+			} // page components
+		) //gamescreen
+
